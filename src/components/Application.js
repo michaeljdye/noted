@@ -1,13 +1,14 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import NoteListContainer from '../containers/NoteListContainer';
-import EmptyState from './EmptyState';
-import NotFound from './NotFound';
-import NoteViewContainer from '../containers/NoteViewContainer';
+import NoteListContainer from '../containers/NoteListContainer'
+import EmptyState from './EmptyState'
+import NotFound from './NotFound'
+import NoteViewContainer from '../containers/NoteViewContainer'
 
-import Styles from '../styles.css';
+import Styles from '../styles.css'
 
+// Start of application
 const Application = () => (
   <div className={Styles.container}>
     <header className={Styles.header}>
@@ -21,6 +22,6 @@ const Application = () => (
       <Route component={NotFound} />
     </Switch>
   </div>
-);
+)
 
-export default Application;
+export default Application
